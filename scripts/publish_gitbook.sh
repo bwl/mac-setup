@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-readonly commands=(python git gitbook cp)
+readonly commands=(git gitbook cp)
 
 function is_available {
   command -v $1 >/dev/null 2>&1 ||
@@ -11,12 +11,6 @@ function is_available {
 for cmd in ${commands[@]}; do is_available "$cmd"; done
 
 echo "All required packages are available, will continue"
-
-echo "Updating list of contributors"
-python ./scripts/contributors.py
-git commit -a -m "Update list of contributors"
-git push origin master
-echo "Finished updating list of contributors"
 
 echo "Building the guide using gitbook"
 gitbook install && gitbook build
