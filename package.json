@@ -1,7 +1,7 @@
 {
   "name": "mac-setup",
   "version": "0.0.3",
-  "homepage": "https://www.sourabhbajaj.com/",
+  "homepage": "https://bwl.github.io/mac-setup",
   "description": "Installing Development environment on macOS",
   "devDependencies": {
     "gitbook": "3.2.3",
@@ -12,22 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sb2nov/mac-setup.git"
+    "url": "https://github.com/bwl/mac-setup.git"
   },
   "keywords": [
-    "OSx",
-    "OS X",
-    "Install",
     "Mac",
     "macOS",
-    "Git",
-    "Gitbook",
-    "Setup",
-    "Instruction"
+    "Setup"
   ],
-  "author": "Sourabh Bajaj",
+  "author": "bwl",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sb2nov/mac-setup/issues"
+    "url": "https://github.com/bwl/mac-setup/issues"
   }
 }

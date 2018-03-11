@@ -4,14 +4,14 @@
   "direction": "ltr",
   "gitbook": "3.2.3",
   "links": {
-    "home": "http://sourabhbajaj.com/mac-setup/",
-    "about": "http://sourabhbajaj.com",
+    "home": "https://bwl.github.io/mac-setup/",
+    "about": "https://github.com/bwl/mac-setup",
     "issues": null,
     "contribute": null
   },
   "pdf": {
     "toc": true,
-    "pageNumbers": false,
+    "pageNumbers": true,
     "fontSize": 12,
     "paperSize": "a4",
     "margin": {
@@ -26,7 +26,7 @@
   ],
   "pluginsConfig": {
     "analytics": {
-      "google": "UA-40495390-3"
+      "google": "UA-xxx-x"
     }
   }
 }
