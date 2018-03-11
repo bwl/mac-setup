@@ -1,0 +1,981 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Emacs · macOS Setup Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../SublimeText/" />
+    
+    
+    <link rel="prev" href="../Vim/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+    
+        <nav role="navigation">
+        
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../SystemPreferences/">
+            
+                <a href="../SystemPreferences/">
+            
+                    
+                    System Preferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Xcode/">
+            
+                <a href="../Xcode/">
+            
+                    
+                    Xcode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Homebrew/">
+            
+                <a href="../Homebrew/">
+            
+                    
+                    Homebrew
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Homebrew/Usage.html">
+            
+                <a href="../Homebrew/Usage.html">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Homebrew/Cask.html">
+            
+                <a href="../Homebrew/Cask.html">
+            
+                    
+                    Cask
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../iTerm/">
+            
+                <a href="../iTerm/">
+            
+                    
+                    iTerm2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../iTerm/zsh.html">
+            
+                <a href="../iTerm/zsh.html">
+            
+                    
+                    Zsh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../iTerm/tree.html">
+            
+                <a href="../iTerm/tree.html">
+            
+                    
+                    tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../iTerm/fzf.html">
+            
+                <a href="../iTerm/fzf.html">
+            
+                    
+                    fzf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../iTerm/ack.html">
+            
+                <a href="../iTerm/ack.html">
+            
+                    
+                    ack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Git/">
+            
+                <a href="../Git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Git/gitignore.html">
+            
+                <a href="../Git/gitignore.html">
+            
+                    
+                    Git Ignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Vim/">
+            
+                <a href="../Vim/">
+            
+                    
+                    Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Emacs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../SublimeText/">
+            
+                <a href="../SublimeText/">
+            
+                    
+                    Sublime Text
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../SublimeText/Preferences.html">
+            
+                <a href="../SublimeText/Preferences.html">
+            
+                    
+                    Preferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../SublimeText/Packages.html">
+            
+                <a href="../SublimeText/Packages.html">
+            
+                    
+                    Packages 1/2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../SublimeText/Plugins.html">
+            
+                <a href="../SublimeText/Plugins.html">
+            
+                    
+                    Packages 2/2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../SublimeText/SublimeLinter.html">
+            
+                <a href="../SublimeText/SublimeLinter.html">
+            
+                    
+                    Sublime Linter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../JetBrains IDEs/">
+            
+                <a href="../JetBrains IDEs/">
+            
+                    
+                    JetBrains IDEs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Python/">
+            
+                <a href="../Python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../Python/pip.html">
+            
+                <a href="../Python/pip.html">
+            
+                    
+                    Pip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../Python/virtualenv.html">
+            
+                <a href="../Python/virtualenv.html">
+            
+                    
+                    Virtualenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../Python/numpy.html">
+            
+                <a href="../Python/numpy.html">
+            
+                    
+                    Numpy-Scipy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../Python/ipython.html">
+            
+                <a href="../Python/ipython.html">
+            
+                    
+                    IPython
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../MySQL/README.md">
+            
+                <span>
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Cpp/">
+            
+                <a href="../Cpp/">
+            
+                    
+                    CPlusPlus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Java/">
+            
+                <a href="../Java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../Scala/">
+            
+                <a href="../Scala/">
+            
+                    
+                    Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../Ruby/">
+            
+                <a href="../Ruby/">
+            
+                    
+                    Ruby
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../Ruby/RubyGems.html">
+            
+                <a href="../Ruby/RubyGems.html">
+            
+                    
+                    RubyGems
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../Rust/">
+            
+                <a href="../Rust/">
+            
+                    
+                    Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../Node.js/">
+            
+                <a href="../Node.js/">
+            
+                    
+                    Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../Go/">
+            
+                <a href="../Go/">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../Heroku/">
+            
+                <a href="../Heroku/">
+            
+                    
+                    Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../Vagrant/">
+            
+                <a href="../Vagrant/">
+            
+                    
+                    Vagrant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../Docker/">
+            
+                <a href="../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.22.1" data-path="../Docker/UsefulCommands.html">
+            
+                <a href="../Docker/UsefulCommands.html">
+            
+                    
+                    Useful Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22.2" data-path="../Docker/TipsAndTricks.html">
+            
+                <a href="../Docker/TipsAndTricks.html">
+            
+                    
+                    Tips and Tricks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../LaTeX/">
+            
+                <a href="../LaTeX/">
+            
+                    
+                    LaTeX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../Apps/">
+            
+                <a href="../Apps/">
+            
+                    
+                    Other Apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.24.1" data-path="../Apps/Octave.html">
+            
+                <a href="../Apps/Octave.html">
+            
+                    
+                    Octave
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24.2" data-path="../Apps/Settings.html">
+            
+                <a href="../Apps/Settings.html">
+            
+                    
+                    App Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../Security/">
+            
+                <a href="../Security/">
+            
+                    
+                    Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="../References/">
+            
+                <a href="../References/">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+        </nav>
+    
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Emacs</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="emacs">Emacs</h1>
+<p><a href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a> is a family of text editors that are characterized by their extensibility. The manual for the most widely used variant, GNU Emacs, describes it as the extensible, customizable, self-documenting, real-time display editor.</p>
+<p>Development of the first Emacs began in the mid-1970s, and work on its direct descendant, GNU Emacs, continues actively as of 2017.</p>
+<h2 id="installation">Installation</h2>
+<p>There are many Emacs clients on macOS. The recommended version on macOS is Emacs Mac Port, but others are good as well.</p>
+<h3 id="emacs-mac-port-recommended"><a href="https://bitbucket.org/mituharu/emacs-mac/overview" target="_blank">Emacs Mac port</a> (Recommended)</h3>
+<p>Many useful features are built with Emacs Mac Port, e.g. environment variables, full screen, visual enhancements and so on.</p>
+<p>Link the Homebrew tap first.</p>
+<pre><code class="lang-shell">brew tap railwaycat/emacsmacport
+</code></pre>
+<ul>
+<li><p>Method 1: Install with <code>brew cask</code>.</p>
+<pre><code class="lang-shell">brew cask install emacs-mac
+</code></pre>
+<p>There are three available versions, <code>emacs-mac</code>, <code>emacs-mac-official-icon</code>, <code>emacs-mac-spacemacs-icon</code>.</p>
+</li>
+<li><p>Method 2: Build from source with Homebrew.</p>
+<pre><code class="lang-shell">brew install emacs-mac [options]
+brew linkapps emacs-mac
+</code></pre>
+</li>
+</ul>
+<details>
+<summary>Click here to see available options: </summary>
+1. <code>--with-dbus</code>, Build with d-bus support<br>
+2. <code>--with-modules</code>, Build with dynamic modules support<br>
+3. <code>--with-xml2</code>, Build with libxml2 support<br>
+4. <code>--with-ctags</code>, Don&apos;t remove the ctags executable that emacs provides<br>
+5. <code>--with-no-title-bars</code>, Build with a patch for no title bars on frames (--HEAD is not supported)<br>
+6. <code>--with-natural-title-bar</code>, Build with a patch for title bar color inferred by your theme (--HEAD is not supported). More info is provided <a href="https://github.com/railwaycat/homebrew-emacsmacport/wiki/Natural-Title-Bar" target="_blank">here</a><br>
+7. <code>--with-official-icon</code>, Using official Emacs icon<br>
+8. <code>--with-modern-icon</code>, Using a modern style Emacs icon by @tpanum<br>
+9. <code>--with-spacemacs-icon</code>, Using the spacemacs Emacs icon by Nasser Alshammari<br>
+10. <code>--with-icon-for-documents</code>, Using official icon for documents which default open with Emacs<br>
+</details>
+
+<h3 id="emacs-plus"><a href="https://github.com/d12frosted/homebrew-emacs-plus#emacs-plus" target="_blank">Emacs plus</a></h3>
+<pre><code class="lang-shell">brew tap d12frosted/emacs-plus
+brew install emacs-plus [options]
+brew linkapps emacs-plus
+</code></pre>
+<details>
+<summary>Click here to see available options: </summary>
+1. <code>--with-24bit-color</code>: Experimental: build with 24 bit color support<br>
+2. <code>--with-ctags</code>: Don&apos;t remove the ctags executable that Emacs provides<br>
+3. <code>--with-dbus</code>: Build with dbus support<br>
+4. <code>--with-mailutils</code>: Build with mailutils support<br>
+5. <code>--with-natural-title-bar</code>: Experimental: use a title bar colour inferred by your theme<br>
+6. <code>--with-no-title-bars</code>: Experimental: build with a patch for no title bars on frames (--HEAD has this built-in via undecorated flag)<br>
+7. <code>--with-x11</code>: Experimental: build with x11 support<br>
+8. <code>--without-cocoa</code>: Build a non-Cocoa version of Emacs<br>
+9. <code>--without-gnutls</code>: Build without gnutls support<br>
+10. <code>--without-imagemagick@6</code>: Build without imagemagick@6 support<br>
+11. <code>--without-librsvg</code>: Build without librsvg support<br>
+12. <code>--without-libxml2</code>: Build without libxml2 support<br>
+13. <code>--without-modules</code>: Build without dynamic modules support<br>
+14. <code>--without-multicolor-fonts</code>: Build without a patch that enables multicolor font support<br>
+15. <code>--without-spacemacs-icon</code>: Build without Spacemacs icon by Nasser Alshammari<br>
+16. <code>--HEAD</code>: Install HEAD version<br>
+</details>
+
+<blockquote>
+<p><strong>Note</strong>: You might want to install <a href="https://github.com/purcell/exec-path-from-shell" target="_blank">exec-path-from-shell</a> if you are using Emacs plus. It takes care of your environment variables.</p>
+<p><strong>Note</strong>: to have the title bar match your theme background color, consider using instead:
+<code>brew install emacs-plus --HEAD --with-natural-title-bars</code></p>
+</blockquote>
+<h2 id="spacemacs">Spacemacs</h2>
+<p><a href="https://github.com/syl20bnr/spacemacs/blob/master/README.md" target="_blank">Spacemacs</a> is a new way to experience Emacs -- a sophisticated and polished set-up focused on ergonomics, mnemonics and consistency.</p>
+<p>Spacemacs can be used naturally by both Emacs and Vim users -- you can even mix the two editing styles. Switching easily between input styles makes Spacemacs a great tool for pair-programming.</p>
+<h3 id="installation">Installation</h3>
+<ol>
+<li><p>If you have an existing Emacs configuration, back it up first:</p>
+<pre><code class="lang-sh"><span class="hljs-built_in">cd</span> ~
+mv .emacs.d .emacs.d.bak
+mv .emacs .emacs.bak
+</code></pre>
+<p>Don&apos;t forget to backup and <em>remove</em> <code>~/.emacs</code> file otherwise Spacemacs
+<strong>WILL NOT</strong> load since that file prevents Emacs from loading the proper
+initialization file.</p>
+</li>
+<li><p>Clone the repository:</p>
+<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/syl20bnr/spacemacs ~/.emacs.d
+</code></pre>
+<p><code>master</code> is the stable branch and it is <em>immutable</em>, <strong>DO NOT</strong> make any
+modification to it or you will break the update mechanism. If you want to
+fork Spacemacs safely use the <code>develop</code> branch where you handle the update
+manually.</p>
+</li>
+<li><p>(Optional) Install the <a href="https://github.com/adobe-fonts/source-code-pro" target="_blank">Source Code Pro</a> font.</p>
+<p>If you are running in terminal you&apos;ll also need to change font settings of
+your terminal.</p>
+</li>
+<li><p>Launch Emacs. Spacemacs will automatically install the packages it requires.
+If you get an error regarding package downloads then you may try to disable
+the HTTPS protocol by starting Emacs with</p>
+<pre><code class="lang-sh">emacs --insecure
+</code></pre>
+<p>Or you can set the <code>dotspacemacs-elpa-https</code> to <code>nil</code> in your dotfile to
+remove the need to start Emacs with <code>--insecure</code> argument. You may wish to
+clear out your <code>.emacs.d/elpa</code> directory before doing this, so that any
+corrupted packages you may have downloaded will be re-installed.</p>
+</li>
+<li><p>Restart Emacs to complete the installation.</p>
+</li>
+</ol>
+<h2 id="purcells-emacs-configuration">Purcell&apos;s Emacs configuration</h2>
+<p>This is <a href="https://github.com/purcell/emacs.d" target="_blank">Purcell&apos;s</a> emacs configuration tree, continually used and tweaked since 2000, and it may be a good starting point for other Emacs users, especially those who are web developers. These days it&apos;s somewhat geared towards macOS, but it is known to also work on Linux and Windows.</p>
+<h3 id="installation">Installation</h3>
+<p>To install, clone this repo to <code>~/.emacs.d</code>, i.e. ensure that the <code>init.el</code> contained in this repo ends up at <code>~/.emacs.d/init.el</code>:</p>
+<pre><code class="lang-shell">git clone https://github.com/purcell/emacs.d.git ~/.emacs.d
+</code></pre>
+<p>Upon starting up Emacs for the first time, further third-party packages will be automatically downloaded and installed. If you encounter any errors at that stage, try restarting Emacs, and possibly running <code>M-x package-refresh-contents</code> before doing so.</p>
+<h2 id="doom-emacs">Doom Emacs</h2>
+<p><a href="https://github.com/hlissner/doom-emacs" target="_blank">Doom</a> is a configuration for GNU Emacs written by a stubborn, shell-dwelling, and melodramatic ex-vimmer. It wasn&apos;t originally intended for public use, but can be considered a hacker&apos;s starter kit.</p>
+<h3 id="installation">Installation</h3>
+<pre><code class="lang-shell">git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+cd ~/.emacs.d
+cp init.example.el init.el  # maybe edit init.el
+make install
+</code></pre>
+<p>Don&apos;t forget to run <code>make</code> every time you modify <code>init.el</code>!</p>
+<p>Visit the wiki for <a href="https://github.com/hlissner/doom-emacs/wiki" target="_blank">a more detailed guide on installing, customizing and grokking Doom</a>.</p>
+<script src="../../_gitbook_plugin_analytics.js"></script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Vim/" class="navigation navigation-prev " aria-label="Previous page: Vim">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../SublimeText/" class="navigation navigation-next " aria-label="Next page: Sublime Text">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Emacs","level":"1.8","depth":1,"next":{"title":"Sublime Text","level":"1.9","depth":1,"path":"Book/SublimeText/README.md","ref":"Book/SublimeText/README.md","articles":[{"title":"Preferences","level":"1.9.1","depth":2,"path":"Book/SublimeText/Preferences.md","ref":"Book/SublimeText/Preferences.md","articles":[]},{"title":"Packages 1/2","level":"1.9.2","depth":2,"path":"Book/SublimeText/Packages.md","ref":"Book/SublimeText/Packages.md","articles":[]},{"title":"Packages 2/2","level":"1.9.3","depth":2,"path":"Book/SublimeText/Plugins.md","ref":"Book/SublimeText/Plugins.md","articles":[]},{"title":"Sublime Linter","level":"1.9.4","depth":2,"path":"Book/SublimeText/SublimeLinter.md","ref":"Book/SublimeText/SublimeLinter.md","articles":[]}]},"previous":{"title":"Vim","level":"1.7","depth":1,"path":"Book/Vim/README.md","ref":"Book/Vim/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["analytics"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-xxx-x"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"macOS Setup Guide","language":"en","links":{"home":"https://bwl.github.io/mac-setup/","about":"https://github.com/bwl/mac-setup","issues":null,"contribute":null},"gitbook":"3.2.3","direction":"ltr"},"file":{"path":"Book/Emacs/README.md","mtime":"2018-03-11T18:58:06.864Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-11T19:21:48.926Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
