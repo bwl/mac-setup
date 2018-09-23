@@ -5,7 +5,9 @@ Create and configure lightweight, reproducible, and portable development environ
 You'll need `homebrew-cask`, if you don't have it refer to [this section](/mac-setup/Homebrew/Cask.html).
 
 ## Installation
-Vagrant uses [Virtualbox](https://www.virtualbox.org/) to manage the virtual dependencies. You can [directly download virtualbox](https://www.virtualbox.org/wiki/Downloads) and install or use Homebrew for it.
+Vagrant uses [Virtualbox](https://www.virtualbox.org/) to manage the virtual dependencies. You can [directly download virtualbox](https://www.virtualbox.org/wiki/Downloads) and install or use Homebrew for it. 
+Notice that macOS High Sierra 10.13 introduces a new feature that requires user approval before loading new third-party kernel extensions.
+In case of failure follow the instructions [here](https://developer.apple.com/library/archive/technotes/tn2459/_index.html) 
 
     $ brew cask install virtualbox
 
@@ -22,7 +24,7 @@ Add the Vagrant box you want to use. We'll use Ubuntu 12.04 for the following ex
 
     $ vagrant box add precise64 http://files.vagrantup.com/precise64.box
 
-You can find more boxes at [Vagrant Cloud](https://vagrantcloud.com).
+You can find more boxes at [Vagrant Cloud](https://app.vagrantup.com/boxes/search).
 
 Now create a test directory and `cd` into the test directory. Then we'll initialize the vagrant machine.
 
